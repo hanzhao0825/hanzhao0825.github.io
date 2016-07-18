@@ -3,14 +3,29 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Han’s Blog</title>
+  <title>Unity AR Demo Part1 - Using Vuforia | Han’s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Han’s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="In this tutorial, we are going to set up a demo Unity AR project step by step
+Get your Vuforia ready
+Goto &amp;#x201C;https://developer.vuforia.com/user/register&amp;#x201D; and create an account
+Goto &amp;#x201C">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Unity AR Demo Part1 - Using Vuforia">
+<meta property="og:url" content="http://yoursite.com/2016/07/18/Unity_AR_Demo_Part1_Using_Vuforia/index.html">
 <meta property="og:site_name" content="Han’s Blog">
+<meta property="og:description" content="In this tutorial, we are going to set up a demo Unity AR project step by step
+Get your Vuforia ready
+Goto &amp;#x201C;https://developer.vuforia.com/user/register&amp;#x201D; and create an account
+Goto &amp;#x201C">
+<meta property="og:image" content="http://yoursite.com/2016/07/18/Unity_AR_Demo_Part1_Using_Vuforia/license.jpg">
+<meta property="og:updated_time" content="2016-07-18T03:56:36.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Han’s Blog">
+<meta name="twitter:title" content="Unity AR Demo Part1 - Using Vuforia">
+<meta name="twitter:description" content="In this tutorial, we are going to set up a demo Unity AR project step by step
+Get your Vuforia ready
+Goto &amp;#x201C;https://developer.vuforia.com/user/register&amp;#x201D; and create an account
+Goto &amp;#x201C">
+<meta name="twitter:image" content="http://yoursite.com/2016/07/18/Unity_AR_Demo_Part1_Using_Vuforia/license.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Han’s Blog" type="application/atom+xml">
   
@@ -59,9 +74,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Unity_AR_Demo_Part1_Using_Vuforia" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Unity_AR_Demo_Part1_Using_Vuforia" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/07/18/Unity_AR_Demo_Part1_Using_Vuforia/" class="article-date">
   <time datetime="2016-07-18T02:54:30.000Z" itemprop="datePublished">2016-07-18</time>
@@ -74,8 +87,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/18/Unity_AR_Demo_Part1_Using_Vuforia/">Unity AR Demo Part1 - Using Vuforia</a>
+    <h1 class="article-title" itemprop="name">
+      Unity AR Demo Part1 - Using Vuforia
     </h1>
   
 
@@ -115,60 +128,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-Blogging_with_Hexo" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/07/18/Blogging_with_Hexo/" class="article-date">
-  <time datetime="2016-07-18T00:39:01.000Z" itemprop="datePublished">2016-07-18</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/18/Blogging_with_Hexo/">Blogging with Hexo</a>
-    </h1>
+    <a href="/2016/07/18/Blogging_with_Hexo/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Blogging with Hexo</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ol>
-<li>Install Node.js from the official website &#x201C;<a href="https://nodejs.org/en/&#x201C;" target="_blank" rel="external">https://nodejs.org/en/&#x201C;</a></li>
-<li><p>Install hexo (sudo required)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo</div></pre></td></tr></table></figure>
-</li>
-<li><p>Set up Hexo in you destination directory</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo init</div><div class="line">npm install</div></pre></td></tr></table></figure>
-</li>
-<li><p>Deploy Hexo on Github Pages</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div><div class="line"></div><div class="line">// Edit _config.yml</div><div class="line">## Docs: https://hexo.io/docs/deployment.html</div><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: https://github.com/XXX/XXX.github.io</div><div class="line"></div><div class="line">// Run the following commands</div><div class="line">hexo -d</div><div class="line">hexo -g</div></pre></td></tr></table></figure>
-</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/07/18/Blogging_with_Hexo/" data-id="ciqri1wj30001wis9hple3476" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-  
 
 </section>
         
