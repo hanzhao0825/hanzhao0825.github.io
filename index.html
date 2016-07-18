@@ -83,35 +83,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <a id="more"></a>
-<p>In this tutorial, we are going to set up a demo Unity AR project step by step</p>
-<h2 id="Get-your-Vuforia-ready"><a href="#Get-your-Vuforia-ready" class="headerlink" title="Get your Vuforia ready"></a>Get your Vuforia ready</h2><ol>
-<li>Goto &#x201C;<a href="https://developer.vuforia.com/user/register&#x201D;" target="_blank" rel="external">https://developer.vuforia.com/user/register&#x201D;</a> and create an account</li>
-<li>Goto &#x201C;<a href="https://developer.vuforia.com/license-manager&#x201D;" target="_blank" rel="external">https://developer.vuforia.com/license-manager&#x201D;</a> and create a license key for your application.</li>
-<li>Goto &#x201C;<a href="https://developer.vuforia.com/downloads/sdk&#x201D;" target="_blank" rel="external">https://developer.vuforia.com/downloads/sdk&#x201D;</a> and download Vuforia SDK for Unity</li>
-<li>Open a new project in Unity</li>
-<li>Double-Click the package you just downloaded and import all the contents</li>
-</ol>
-<blockquote><p>NEW: DevDocs now comes with syntax highlighting. <a href="http://devdocs.io" target="_blank" rel="external">http://devdocs.io</a></p>
-<footer><strong>@DevDocs</strong><cite><a href="https://twitter.com/devdocs/status/356095192085962752" target="_blank" rel="external">twitter.com/devdocs/status/356095192085962752</a></cite></footer></blockquote>
-<p>&lt;img src=&#x201D;Unity_AR_Demo_Part1_Using_Vuforia/license.png&#x201D; alt=&#x201D;faild&#x201D; width=&#x201C;50&#x201D;/&gt;<br></p>
-<h2 id="Build-the-scene"><a href="#Build-the-scene" class="headerlink" title="Build the scene"></a>Build the scene</h2><ol>
-<li>Delete the main camera and replace it with ARCamera in &#x201C;Vuforia/Prefabs&#x201D;</li>
-<li>Fill in your App License Key <img src="/2016/07/18/Unity_AR_Demo_Part1_Using_Vuforia/license.png" alt="App License Key"></li>
-<li>Create the package for the image target<br> a. Goto &#x201C;<a href="https://developer.vuforia.com/targetmanager/&#x201C;" target="_blank" rel="external">https://developer.vuforia.com/targetmanager/&#x201C;</a> and add a database<br> b. In the database, add a simple image target (you can use this), and set the width to &#x201C;1&#x201D;<br> c. Download the database<br> d. Double-Click it and import the database<br> e. Under ARCamera, select &#x201C;Load YOUR database&#x201D; and &#x201C;activate&#x201D;</li>
-<li>Add the image target to your scene<br> a. Drop the &#x201C;image target&#x201D; from Vuforia/Prefabs to the scene<br> b. Choose the right database and target for your image target</li>
-<li>Add a sphere into the scene, and drag it onto the image target</li>
-<li>Adjust the scale and the position of the sphere for better look</li>
-</ol>
-<h2 id="Run-the-project-in-the-editor"><a href="#Run-the-project-in-the-editor" class="headerlink" title="Run the project in the editor"></a>Run the project in the editor</h2><ol>
-<li>Click the &#x201C;Play&#x201D; button, the camera will open</li>
-<li>Put the image before the camera, you will see that sphere</li>
-</ol>
-
+        <p>In this tutorial, we are going to set up a demo Unity AR project step by step</p>
+        
+          <p class="article-more-link">
+            <a href="/2016/07/18/Unity_AR_Demo_Part1_Using_Vuforia/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/07/18/Unity_AR_Demo_Part1_Using_Vuforia/" data-id="ciqrj3nvi00011hs9yw6dz7vx" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/07/18/Unity_AR_Demo_Part1_Using_Vuforia/" data-id="ciqrjara400012bs97qc9f5th" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AR/">AR</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Unity/">Unity</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vuforia/">Vuforia</a></li></ul>
@@ -145,24 +126,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <a id="more"></a>
-<ol>
-<li>Install Node.js from the official website &#x201C;<a href="https://nodejs.org/en/&#x201C;" target="_blank" rel="external">https://nodejs.org/en/&#x201C;</a></li>
-<li><p>Install hexo (sudo required)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo</div></pre></td></tr></table></figure>
-</li>
-<li><p>Set up Hexo in you destination directory</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo init</div><div class="line">npm install</div></pre></td></tr></table></figure>
-</li>
-<li><p>Deploy Hexo on Github Pages</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div><div class="line"></div><div class="line">// Edit _config.yml</div><div class="line">## Docs: https://hexo.io/docs/deployment.html</div><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: https://github.com/XXX/XXX.github.io</div><div class="line"></div><div class="line">// Run the following commands</div><div class="line">hexo -d</div><div class="line">hexo -g</div></pre></td></tr></table></figure>
-</li>
-</ol>
-
+        <ol>
+<li>Install Node.js from the official website &#x201C;<a href="https://nodejs.org/en/&#x201C;">https://nodejs.org/en/&#x201C;</a></li></ol>
+        
+          <p class="article-more-link">
+            <a href="/2016/07/18/Blogging_with_Hexo/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/07/18/Blogging_with_Hexo/" data-id="ciqrj3nvd00001hs94l1r83hi" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/07/18/Blogging_with_Hexo/" data-id="ciqrjar9z00002bs94t2flg61" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
